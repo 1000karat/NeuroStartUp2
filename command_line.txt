@@ -1,0 +1,21 @@
+>Создайте ветку feature/code-documentation и переключитесь на неё;
+git branch feature/code-documentation
+git checkout feature/code-documentation
+
+>Вставьте текст из Приложения №1 (находится над заголовком «Задача») в файл README.md ниже того текста, что там уже есть. Для блока кода используйте три бэктика и css в качестве технологии.
+git add README.md
+
+>Создайте отдельный репозиторий на GitHub'е;
+https://github.com/1000karat/NeuroStartUp2.git
+
+>Свяжите ваш локальный репозиторий с только что созданным удалённым репозиторием. При связывании используйте кодовое имя target.
+git remote add target https://github.com/1000karat/NeuroStartUp2.git
+
+>Отправьте в удалённый репозиторий произведённые изменения;
+git push -u target feature/code-documentation
+
+>Переключитесь на ветку master (или main) и отправьте её в удалённый репозиторий;
+git checkout main
+git push -u target main
+
+>Убедитесь, что ветка feature/code-documentation попала на GitHub. В итоге в вашем проекте должно получиться две ветки.
